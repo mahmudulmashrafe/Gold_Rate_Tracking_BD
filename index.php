@@ -233,6 +233,282 @@ $statistics = $db->getStatistics(30);
                 height: 300px;
                 padding: 10px;
             }
+            
+            /* Mobile navbar improvements */
+            .navbar .container {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .navbar-brand {
+                font-size: 1.1rem !important;
+                line-height: 1.3;
+            }
+            
+            .navbar-brand span {
+                display: block;
+                margin-top: 5px;
+            }
+            
+            .navbar .d-flex {
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
+            
+            .btn-update {
+                padding: 8px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .navbar-text {
+                font-size: 0.85rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+            .navbar-brand {
+                font-size: 1rem !important;
+            }
+            
+            .card {
+                margin-bottom: 1rem;
+            }
+            
+            /* Mobile rate cards improvements */
+            .rate-card .card-body {
+                padding: 15px;
+            }
+            
+            .rate-card h4 {
+                font-size: 1.3rem;
+            }
+            
+            .rate-card h6 {
+                font-size: 0.9rem;
+            }
+            
+            .change-badge {
+                font-size: 0.75rem;
+                padding: 6px 10px;
+            }
+            
+            /* Section titles mobile */
+            h4, h5 {
+                font-size: 1.1rem !important;
+            }
+            
+            /* Statistics mobile layout */
+            .col-lg-6 .row.g-1 .col-6 {
+                margin-bottom: 8px;
+            }
+            
+            .col-lg-6 .row.g-1 .col-6 .p-2 {
+                padding: 10px !important;
+            }
+            
+            .col-lg-6 .row.g-1 .col-6 .text-white {
+                font-size: 0.7rem !important;
+            }
+            
+            /* Mobile calculator improvements */
+            .calculator-card .card-body {
+                padding: 15px;
+            }
+            
+            .form-control, .form-select {
+                padding: 10px 12px;
+                font-size: 0.9rem;
+            }
+            
+            .calculator-result {
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .calculator-result h4 {
+                font-size: 1.2rem;
+            }
+            
+            .calculator-result h5 {
+                font-size: 1rem;
+            }
+            
+            .calculator-result h6 {
+                font-size: 0.9rem;
+            }
+            
+            .calculator-stats {
+                padding: 12px;
+            }
+            
+            .stat-value {
+                font-size: 1rem;
+            }
+            
+            .stat-item {
+                padding: 8px;
+            }
+            
+            /* Mobile chart improvements */
+            .chart-card .card-header h4 {
+                font-size: 1.2rem;
+            }
+            
+            .chart-container {
+                height: 250px !important;
+                padding: 15px !important;
+            }
+            
+            /* Chart controls mobile layout */
+            .chart-card .row .col-md-4 {
+                margin-bottom: 15px;
+            }
+            
+            .form-select-lg {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
+            
+            .chart-card .form-label {
+                font-size: 0.9rem;
+                margin-bottom: 5px;
+            }
+            
+            /* Chart stats mobile */
+            .chart-stat {
+                margin-bottom: 15px;
+            }
+            
+            .chart-stat i {
+                font-size: 1rem !important;
+            }
+            
+            .chart-stat .text-white {
+                font-size: 0.9rem;
+            }
+            
+            .chart-stat .fw-bold {
+                font-size: 0.9rem;
+            }
+            
+            /* Touch-friendly improvements */
+            .btn {
+                min-height: 44px;
+                padding: 12px 20px;
+            }
+            
+            .form-control, .form-select {
+                min-height: 44px;
+            }
+            
+            .rate-card {
+                cursor: pointer;
+                user-select: none;
+                -webkit-tap-highlight-color: transparent;
+            }
+            
+            .rate-card:active {
+                transform: scale(0.98);
+            }
+            
+            /* Better spacing for mobile */
+            .row {
+                margin-left: -8px;
+                margin-right: -8px;
+            }
+            
+            .row > * {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            
+            /* Larger tap targets */
+            .change-badge {
+                min-height: 32px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        
+        /* Extra small devices (phones in portrait) */
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            
+            .navbar {
+                padding: 10px 0;
+            }
+            
+            .navbar-brand {
+                font-size: 0.9rem !important;
+            }
+            
+            .btn-update {
+                font-size: 0.8rem;
+                padding: 6px 15px;
+            }
+            
+            .rate-card h4 {
+                font-size: 1.1rem;
+            }
+            
+            .rate-card h6 {
+                font-size: 0.8rem;
+            }
+            
+            .calculator-result h4 {
+                font-size: 1.1rem;
+            }
+            
+            .chart-container {
+                height: 200px !important;
+                padding: 10px !important;
+            }
+            
+            .form-label {
+                font-size: 0.8rem;
+            }
+            
+            .form-control, .form-select {
+                font-size: 0.8rem;
+                padding: 8px 10px;
+            }
+            
+            /* Statistics grid for very small screens */
+            .col-lg-6 .row.g-1 .col-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            
+            /* Mobile statistics improvements */
+            .stats-card .card-body {
+                padding: 10px;
+            }
+            
+            .stats-card .card-header {
+                padding: 8px 15px;
+            }
+            
+            /* Stack statistics on very small screens */
+            .statistics-row .col-lg-6 {
+                margin-bottom: 10px;
+            }
+            
+            .statistics-item {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
+                padding: 8px;
+                margin-bottom: 5px;
+            }
         }
 
         /* Animation for loading */
@@ -261,14 +537,16 @@ $statistics = $db->getStatistics(30);
                     <i class="fas fa-gem me-2" style="color: #FFD700;"></i>
                     <span style="background: linear-gradient(45deg, #FFD700, #FFA500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700;">Bangladesh Gold Rate Tracker</span>
                 </span>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center mobile-nav-controls">
                     <button class="btn btn-update btn-sm me-3" onclick="manualScrape()">
                         <i class="fas fa-sync-alt me-1"></i>
-                        Update Rates
+                        <span class="d-none d-sm-inline">Update Rates</span>
+                        <span class="d-inline d-sm-none">Update</span>
                     </button>
                     <span class="navbar-text">
                         <i class="fas fa-clock me-1" style="color: #20c997;"></i>
-                        Last Updated: <?= $currentRates ? date('d M Y, H:i', strtotime($currentRates['updated_at'])) : 'Never' ?>
+                        <span class="d-none d-md-inline">Last Updated: </span>
+                        <?= $currentRates ? date('d M Y, H:i', strtotime($currentRates['updated_at'])) : 'Never' ?>
                     </span>
                 </div>
             </div>
@@ -301,7 +579,7 @@ $statistics = $db->getStatistics(30);
                                 <i class="fas fa-crown me-2"></i>Gold Rates
                             </h5>
                         </div>
-                        <div class="col-sm-6 col-lg-3 mb-3">
+                        <div class="col-6 col-sm-6 col-lg-3 mb-3">
                     <div class="card rate-card gold-card h-100">
                         <div class="card-body text-center py-3">
                             <h6 class="card-title fw-bold mb-2">22K</h6>
@@ -318,7 +596,7 @@ $statistics = $db->getStatistics(30);
                         </div>
                     </div>
                 </div>
-                        <div class="col-sm-6 col-lg-3 mb-3">
+                        <div class="col-6 col-sm-6 col-lg-3 mb-3">
                     <div class="card rate-card gold-card h-100">
                         <div class="card-body text-center py-3">
                             <h6 class="card-title fw-bold mb-2">21K</h6>
@@ -335,7 +613,7 @@ $statistics = $db->getStatistics(30);
                         </div>
                     </div>
                 </div>
-                        <div class="col-sm-6 col-lg-3 mb-3">
+                        <div class="col-6 col-sm-6 col-lg-3 mb-3">
                     <div class="card rate-card gold-card h-100">
                         <div class="card-body text-center py-3">
                             <h6 class="card-title fw-bold mb-2">18K</h6>
@@ -352,7 +630,7 @@ $statistics = $db->getStatistics(30);
                         </div>
                     </div>
                 </div>
-                        <div class="col-sm-6 col-lg-3 mb-3">
+                        <div class="col-6 col-sm-6 col-lg-3 mb-3">
                     <div class="card rate-card gold-card h-100">
                         <div class="card-body text-center py-3">
                             <h6 class="card-title fw-bold mb-2">Traditional</h6>
@@ -378,7 +656,7 @@ $statistics = $db->getStatistics(30);
                                 <i class="fas fa-star me-2"></i>Silver Rates
                             </h5>
                         </div>
-                        <div class="col-sm-6 col-lg-3 mb-3">
+                        <div class="col-6 col-sm-6 col-lg-3 mb-3">
                     <div class="card rate-card silver-card h-100">
                         <div class="card-body text-center py-3">
                             <h6 class="card-title fw-bold mb-2">22K</h6>
@@ -387,7 +665,7 @@ $statistics = $db->getStatistics(30);
                         </div>
                     </div>
                 </div>
-                        <div class="col-sm-6 col-lg-3 mb-3">
+                        <div class="col-6 col-sm-6 col-lg-3 mb-3">
                     <div class="card rate-card silver-card h-100">
                         <div class="card-body text-center py-3">
                             <h6 class="card-title fw-bold mb-2">21K</h6>
@@ -396,7 +674,7 @@ $statistics = $db->getStatistics(30);
                         </div>
                     </div>
                 </div>
-                        <div class="col-sm-6 col-lg-3 mb-3">
+                        <div class="col-6 col-sm-6 col-lg-3 mb-3">
                     <div class="card rate-card silver-card h-100">
                         <div class="card-body text-center py-3">
                             <h6 class="card-title fw-bold mb-2">18K</h6>
@@ -405,7 +683,7 @@ $statistics = $db->getStatistics(30);
                         </div>
                     </div>
                 </div>
-                        <div class="col-sm-6 col-lg-3 mb-3">
+                        <div class="col-6 col-sm-6 col-lg-3 mb-3">
                     <div class="card rate-card silver-card h-100">
                         <div class="card-body text-center py-3">
                             <h6 class="card-title fw-bold mb-2">Traditional</h6>
@@ -1176,17 +1454,36 @@ $statistics = $db->getStatistics(30);
                 max-width: 350px;
             `;
             
+            // Mobile responsive notification positioning
+            if (window.innerWidth <= 768) {
+                notification.style.cssText += `
+                    left: 10px;
+                    right: 10px;
+                    top: 10px;
+                    max-width: none;
+                    transform: translateY(-100px);
+                `;
+            }
+            
             // Add to page
             document.body.appendChild(notification);
             
             // Animate in
             setTimeout(() => {
-                notification.style.transform = 'translateX(0)';
+                if (window.innerWidth <= 768) {
+                    notification.style.transform = 'translateY(0)';
+                } else {
+                    notification.style.transform = 'translateX(0)';
+                }
             }, 100);
             
             // Auto remove after 4 seconds
             setTimeout(() => {
-                notification.style.transform = 'translateX(400px)';
+                if (window.innerWidth <= 768) {
+                    notification.style.transform = 'translateY(-100px)';
+                } else {
+                    notification.style.transform = 'translateX(400px)';
+                }
                 setTimeout(() => {
                     if (notification.parentNode) {
                         notification.remove();
