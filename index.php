@@ -40,6 +40,12 @@ $statistics = $db->getStatistics(30);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bangladesh Gold Rate Tracker</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='45' fill='%23FFD700'/%3e%3ctext x='50' y='65' text-anchor='middle' font-family='Arial' font-size='45' font-weight='bold' fill='%23B8860B'%3e৳%3c/text%3e%3c/svg%3e">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='45' fill='%23FFD700'/%3e%3ctext x='50' y='65' text-anchor='middle' font-family='Arial' font-size='45' font-weight='bold' fill='%23B8860B'%3e৳%3c/text%3e%3c/svg%3e">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='45' fill='%23FFD700'/%3e%3ctext x='50' y='65' text-anchor='middle' font-family='Arial' font-size='45' font-weight='bold' fill='%23B8860B'%3e৳%3c/text%3e%3c/svg%3e">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='45' fill='%23FFD700'/%3e%3ctext x='50' y='65' text-anchor='middle' font-family='Arial' font-size='45' font-weight='bold' fill='%23B8860B'%3e৳%3c/text%3e%3c/svg%3e">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -585,7 +591,7 @@ $statistics = $db->getStatistics(30);
                             <h6 class="card-title fw-bold mb-2">22K</h6>
                             <h4 class="fw-bold mb-1">৳<?= number_format($currentRates['gold_22k'], 0) ?></h4>
                             <small class="text-muted">per gram</small>
-                            <?php if (isset($comparison['changes'])): ?>
+                            <?php if (isset($comparison['changes']) && $comparison['changes']['gold_22k_change'] != 0): ?>
                             <div class="mt-2">
                                 <span class="change-badge <?= $comparison['changes']['gold_22k_change'] >= 0 ? 'bg-success' : 'bg-danger' ?>">
                                     <i class="fas fa-<?= $comparison['changes']['gold_22k_change'] >= 0 ? 'trending-up' : 'trending-down' ?>"></i>
@@ -602,7 +608,7 @@ $statistics = $db->getStatistics(30);
                             <h6 class="card-title fw-bold mb-2">21K</h6>
                             <h4 class="fw-bold mb-1">৳<?= number_format($currentRates['gold_21k'], 0) ?></h4>
                             <small class="text-muted">per gram</small>
-                            <?php if (isset($comparison['changes'])): ?>
+                            <?php if (isset($comparison['changes']) && $comparison['changes']['gold_21k_change'] != 0): ?>
                             <div class="mt-2">
                                 <span class="change-badge <?= $comparison['changes']['gold_21k_change'] >= 0 ? 'bg-success' : 'bg-danger' ?>">
                                     <i class="fas fa-<?= $comparison['changes']['gold_21k_change'] >= 0 ? 'trending-up' : 'trending-down' ?>"></i>
@@ -619,7 +625,7 @@ $statistics = $db->getStatistics(30);
                             <h6 class="card-title fw-bold mb-2">18K</h6>
                             <h4 class="fw-bold mb-1">৳<?= number_format($currentRates['gold_18k'], 0) ?></h4>
                             <small class="text-muted">per gram</small>
-                            <?php if (isset($comparison['changes'])): ?>
+                            <?php if (isset($comparison['changes']) && $comparison['changes']['gold_18k_change'] != 0): ?>
                             <div class="mt-2">
                                 <span class="change-badge <?= $comparison['changes']['gold_18k_change'] >= 0 ? 'bg-success' : 'bg-danger' ?>">
                                     <i class="fas fa-<?= $comparison['changes']['gold_18k_change'] >= 0 ? 'trending-up' : 'trending-down' ?>"></i>
@@ -636,7 +642,7 @@ $statistics = $db->getStatistics(30);
                             <h6 class="card-title fw-bold mb-2">Traditional</h6>
                             <h4 class="fw-bold mb-1">৳<?= number_format($currentRates['gold_traditional'], 0) ?></h4>
                             <small class="text-muted">per gram</small>
-                            <?php if (isset($comparison['changes'])): ?>
+                            <?php if (isset($comparison['changes']) && $comparison['changes']['gold_traditional_change'] != 0): ?>
                             <div class="mt-2">
                                 <span class="change-badge <?= $comparison['changes']['gold_traditional_change'] >= 0 ? 'bg-success' : 'bg-danger' ?>">
                                     <i class="fas fa-<?= $comparison['changes']['gold_traditional_change'] >= 0 ? 'trending-up' : 'trending-down' ?>"></i>
