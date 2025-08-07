@@ -1,0 +1,12 @@
+[2025-08-07 19:32:19] [INFO] === Test Mode ===
+[2025-08-07 19:32:19] [ERROR] Test scraping failed
+[2025-08-07 19:37:59] [INFO] === Test Mode ===
+[2025-08-07 19:37:59] [INFO] Test scraping successful:
+[2025-08-07 19:37:59] [INFO]   gold_22k: 14712 BDT
+[2025-08-07 19:37:59] [INFO]   gold_21k: 14043 BDT
+[2025-08-07 19:37:59] [INFO]   gold_18k: 12037 BDT
+[2025-08-07 19:37:59] [INFO]   gold_traditional: 9956 BDT
+[2025-08-07 19:37:59] [INFO]   silver_22k: 241 BDT
+[2025-08-07 19:37:59] [INFO]   silver_21k: 230 BDT
+[2025-08-07 19:37:59] [INFO]   silver_18k: 197 BDT
+[2025-08-07 19:37:59] [INFO]   silver_traditional: 148 BDT
